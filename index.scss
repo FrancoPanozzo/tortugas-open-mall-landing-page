@@ -1,1 +1,15 @@
 // Index of all style modules
+
+// Global styles
+// ---
+@import './styles/reset';
+@import './styles/variables';
+@import './styles/general-styles';
+// ---
+
+// Section specific styles
+// ---
+@import './styles/components/header';
+@import './styles/components/main';
+@import './styles/components/footer';
+// ---
