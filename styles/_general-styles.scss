@@ -36,3 +36,11 @@ button {
     content: ' ->';
   }
 }
+
+a {
+  color: var(--blue);
+
+  &:visited {
+    color: var(--purple);
+  }
+}
