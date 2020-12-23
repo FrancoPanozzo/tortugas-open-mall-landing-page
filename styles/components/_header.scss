@@ -1,6 +1,6 @@
 .page-header {
   width: 100%;
-  z-index: 9999;
+  z-index: 99999;
 
   @media screen and (min-width: 1040px) {
     box-shadow: rgba(102, 104, 107, 0.11) 0px 0px 8px 5px;
@@ -15,11 +15,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      z-index: 99999;
     }
   }
 }
 
 .page-header .top-bar {
+  z-index: 99999;
   background-color: var(--white);
   box-sizing: border-box;
   box-shadow: rgba(102, 104, 107, 0.11) 0px 0px 8px 5px;
@@ -88,7 +90,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 99999;
   background-color: var(--pink);
 
   @media screen and (min-width: 1040px) {

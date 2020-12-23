@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white);
-  padding: calc(15px * 5) 15px;
+  padding: 72px 15px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -36,9 +36,9 @@
 .banner span {
   display: block;
   line-height: 1.4;
-  font-size: 1.25rem;
+  font-size: 18px;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 2px 0px 6px rgba(0, 0, 0, 0.3),
     2px -2px 6px rgba(0, 0, 0, 0.3), 0px -2px 6px rgba(0, 0, 0, 0.3),
     -2px -2px 6px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3);
-  max-width: 370px;
+  max-width: 350px;
 }
