@@ -1,6 +1,44 @@
 .banner {
-  margin-top: 73px;
+  margin-top: calc(73px + 15px);
+  background-image: url(../../assets/background.jpg);
+  background-position: 30% top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  padding: calc(15px * 5) 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
   @media screen and (min-width: 470px) {
-    margin-top: 0;
+    margin-top: 15px;
+    align-items: flex-end;
+    padding-right: 20vw;
   }
+}
+
+.banner h1 {
+  margin: 0;
+  margin-bottom: 0.25em;
+  color: rgba(0, 0, 0, 0);
+  font-weight: 700;
+  font-size: 3.75rem;
+  -webkit-text-stroke-width: 2.25px;
+  -webkit-text-stroke-color: var(--white);
+  line-height: 0.85;
+  letter-spacing: 1px;
+
+  @media screen and (min-width: 470px) {
+    font-size: 4rem;
+  }
+}
+
+.banner span {
+  display: block;
+  line-height: 1.4;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), 2px 0px 6px rgba(0, 0, 0, 0.3),
+    2px -2px 6px rgba(0, 0, 0, 0.3), 0px -2px 6px rgba(0, 0, 0, 0.3),
+    -2px -2px 6px rgba(0, 0, 0, 0.3), -2px -2px 7px rgba(0, 0, 0, 0.3);
+  max-width: 370px;
 }

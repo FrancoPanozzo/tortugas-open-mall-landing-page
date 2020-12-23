@@ -163,9 +163,10 @@
     line-height: 2.25;
 
     @media screen and (min-width: 1040px) {
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       transition: color 0.3s ease;
       letter-spacing: -0.25px;
+      display: block;
     }
   }
 
@@ -174,7 +175,7 @@
 
     @media screen and (min-width: 1040px) {
       margin-bottom: 0;
-      margin-right: 15px;
+      margin-right: 17.5px;
 
       &:hover {
         &:nth-child(1) a {
@@ -190,7 +191,7 @@
           color: steelblue;
         }
         &:nth-child(5) a {
-          color: firebrick;
+          color: crimson;
         }
         &:nth-child(6) a {
           color: lightsalmon;

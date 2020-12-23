@@ -1,3 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: currentColor;
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
 body {
   font-family: var(--text-ff);
   background-color: var(--white);
