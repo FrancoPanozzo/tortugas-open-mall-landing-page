@@ -90,9 +90,13 @@ a:visited { color: var(--purple); }
 
 main section { padding: 40px 15px 60px; }
 
-main section:first-of-type, main section:nth-of-type(3) { background-color: var(--gray-lightest); }
+main section:first-of-type, main section:nth-of-type(3) { background-color: var(--gray-lightest); position: relative; }
+
+main section:first-of-type::before, main section:nth-of-type(3)::before { content: url(./assets/circle-decoration.svg); position: absolute; }
 
 h2, h3 { margin: 0; color: var(--gray-medium); }
+
+main section:first-of-type::before { top: -40px; right: -25px; -webkit-transform: rotate(235deg); transform: rotate(235deg); }
 
 main section:first-of-type h2 { font-size: 16px; line-height: 1.5; font-weight: 400; color: var(--gray-dark); margin-bottom: 40px; }
 
@@ -115,6 +119,8 @@ main section:nth-of-type(2) .features ul li { font-size: 12px; color: var(--gray
 main section:nth-of-type(2) .features ul li img { -ms-flex-item-align: start; -ms-grid-row-align: start; align-self: start; margin-top: 5px; }
 
 main section:nth-of-type(2) .features ul li span { margin-left: 0.8em; }
+
+main section:nth-of-type(3)::before { top: -10px; left: -25px; }
 
 main section:nth-of-type(3) .call-to-action { display: block; padding: 40px 20px; background-color: var(--gray-medium); color: var(--white); font-size: 14px; line-height: 2; }
 
