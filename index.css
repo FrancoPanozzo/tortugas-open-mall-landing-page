@@ -1,1 +1,9 @@
-/* No CSS */
+html { font-size: 16px; }
+
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; font-weight: normal; }
+
+ol, ul { list-style: none; }
+
+img { max-width: 100%; height: auto; }
+
+body { --black: black; --black-light: #1d1d1b; --gray-dark: #333333; --gray-medium: #595959; --gray-light: #efeff0; --white: white; --purple: rgb(85, 26, 139); --text-ff: 'Aktiv Grotesk', 'Roboto', sans-serif; --nav-links-ff: 'Neo Sans Std', 'Roboto', sans-serif; --main-title-ff: 'Roboto', sans-serif; }
