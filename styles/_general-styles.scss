@@ -1,0 +1,38 @@
+body {
+  font-family: var(--text-ff);
+  background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+input {
+  background-color: var(--gray-light);
+  color: var(--white);
+  padding: 0.5em 0.8em;
+  border: none;
+  font-weight: normal;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+button {
+  background-color: transparent;
+  text-transform: capitalize;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: var(--blue);
+
+  &::after {
+    content: ' ->';
+  }
+}
