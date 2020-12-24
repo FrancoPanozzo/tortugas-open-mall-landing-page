@@ -80,8 +80,6 @@ footer .column.newsletter {
   input {
     margin-bottom: 10px;
     transition: background-color 0.3s ease;
-    color: white;
-    opacity: 1;
     &:focus {
       background-color: var(--gray-medium);
     }

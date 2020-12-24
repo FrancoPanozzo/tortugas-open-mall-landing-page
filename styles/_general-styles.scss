@@ -30,9 +30,8 @@ input {
   padding: 0.5em 0.8em;
   border: none;
   font-weight: normal;
-
-  &::placeholder {
-    opacity: 0.5;
+  &:placeholder {
+    color: var(--white);
   }
 }
 
