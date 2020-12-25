@@ -12,7 +12,7 @@ footer {
 
   .container {
     width: 100%;
-    max-width: 830px;
+    max-width: 960px;
     text-align: center;
   }
   .columns {
@@ -35,6 +35,10 @@ footer .column.contact-details {
     justify-content: space-between;
     flex: 0 0 50%;
     border-bottom: none;
+  }
+
+  @media screen and (min-width: 1040px) {
+    flex: 0 0 max-content;
   }
 
   svg {
@@ -81,6 +85,11 @@ footer .column.social-media {
     align-items: flex-start;
   }
 
+  @media screen and (min-width: 1040px) {
+    flex: 0 0 max-content;
+    margin-left: auto;
+  }
+
   ul {
     max-width: max-content;
     margin: 0;
@@ -90,7 +99,7 @@ footer .column.social-media {
     text-align: left;
     text-align: start;
 
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 730px) and (max-width: 1040px) {
       padding-left: 25px;
     }
 
@@ -135,6 +144,10 @@ footer .column.newsletter {
     flex: 0 0 250px;
     border-bottom: none;
   }
+  @media screen and (min-width: 1040px) {
+    margin: 0;
+    padding-left: 30px;
+  }
 
   h3 {
     text-transform: capitalize;
@@ -142,21 +155,21 @@ footer .column.newsletter {
     font-size: 20px;
     font-weight: normal;
 
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 730px) and (max-width: 1040px) {
       margin-bottom: 5px;
     }
   }
 
   input {
     margin-bottom: 10px;
+    padding: 7px 10px;
 
     &:focus {
       outline: none;
     }
 
-    @media screen and (min-width: 730px) {
+    @media screen and (min-width: 730px) and (max-width: 1040px) {
       margin-bottom: 5px;
-      padding: 7px 10px;
     }
   }
 
