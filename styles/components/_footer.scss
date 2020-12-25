@@ -16,18 +16,36 @@ footer {
     text-align: center;
   }
   .columns {
+    @media screen and (min-width: 730px) {
+      display: flex;
+      flex-flow: row wrap;
+    }
     .column {
       padding-bottom: 16px;
-      border-bottom: 1px solid var(--gray-light);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
       margin-bottom: 22px;
     }
   }
 }
 
 footer .column.contact-details {
+  @media screen and (min-width: 730px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 0 0 50%;
+    border-bottom: none;
+  }
+
   svg {
     width: 96px;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 730px) {
+      margin-bottom: 0;
+      margin-right: 25px;
+      margin-top: 15px;
+    }
   }
 
   ul {
@@ -36,6 +54,11 @@ footer .column.contact-details {
     list-style: none;
     font-weight: 300;
     color: var(--gray-dark);
+
+    @media screen and (min-width: 730px) {
+      text-align: left;
+      margin: 0;
+    }
 
     strong {
       font-weight: normal;
@@ -51,6 +74,13 @@ footer .column.social-media {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  @media screen and (min-width: 730px) {
+    flex: 0 0 50%;
+    border-bottom: none;
+    align-items: flex-start;
+  }
+
   ul {
     max-width: max-content;
     margin: 0;
@@ -60,8 +90,37 @@ footer .column.social-media {
     text-align: left;
     text-align: start;
 
+    @media screen and (min-width: 730px) {
+      padding-left: 25px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+    }
     li:not(:last-of-type) {
-      margin-bottom: 10px;
+      margin-bottom: 7.5px;
+    }
+  }
+
+  .icon {
+    display: block;
+    background: url('./assets/icons-sprite.png') no-repeat;
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+
+    &.icon-facebook {
+      background-position: -64px -20px;
+    }
+    &.icon-instagram {
+      background-position: -86px 0;
+    }
+    &.icon-twitter {
+      background-position: -64px -40px;
+    }
+    &.icon-app {
+      background-position: -86px -20px;
     }
   }
 }
@@ -70,24 +129,51 @@ footer .column.newsletter {
   display: flex;
   flex-flow: column nowrap;
 
+  @media screen and (min-width: 730px) {
+    margin: 0 auto;
+    text-align: left;
+    flex: 0 0 250px;
+    border-bottom: none;
+  }
+
   h3 {
     text-transform: capitalize;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: normal;
+
+    @media screen and (min-width: 730px) {
+      margin-bottom: 5px;
+    }
   }
 
   input {
     margin-bottom: 10px;
-    transition: background-color 0.3s ease;
+
     &:focus {
-      background-color: var(--gray-medium);
+      outline: none;
+    }
+
+    @media screen and (min-width: 730px) {
+      margin-bottom: 5px;
+      padding: 7px 10px;
     }
   }
+
   button {
     align-self: flex-end;
     font-weight: 500;
     font-size: 11px;
+    display: flex;
+    align-items: center;
+
+    .icon-send {
+      margin-left: 5px;
+      display: block;
+      background: url('./assets/icons-sprite.png') no-repeat -63px -83px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
 
@@ -95,6 +181,13 @@ footer .developed-by {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 730px) {
+    padding-top: 16px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 22px;
+  }
+
   span {
     opacity: 0.5;
     margin-right: 5px;
