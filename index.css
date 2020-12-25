@@ -12,7 +12,11 @@ h1, h2, h3, h4, h5, h6 { text-transform: uppercase; }
 
 input { background-color: var(--gray-light); color: var(--white); padding: 0.5em 0.8em; border: none; font-weight: normal; }
 
-input:placeholder { color: var(--white); }
+input:-ms-input-placeholder, input::-ms-input-placeholder { color: var(--white); }
+
+input::-ms-input-placeholder, input::-ms-input-placeholder { color: var(--white); }
+
+input::placeholder, input::-ms-input-placeholder { color: var(--white); }
 
 button { background-color: transparent; text-transform: capitalize; border: none; padding: 0; margin: 0; color: var(--blue); }
 

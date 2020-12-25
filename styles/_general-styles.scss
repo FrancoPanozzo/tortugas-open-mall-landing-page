@@ -30,7 +30,8 @@ input {
   padding: 0.5em 0.8em;
   border: none;
   font-weight: normal;
-  &:placeholder {
+  &::placeholder,
+  &::-ms-input-placeholder {
     color: var(--white);
   }
 }
