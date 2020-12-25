@@ -30,6 +30,35 @@ input {
   padding: 0.5em 0.8em;
   border: none;
   font-weight: normal;
+
+  &::-webkit-input-placeholder {
+    // Chrome, Safari and Opera
+    color: var(--white);
+    opacity: 0.6;
+  }
+
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--white);
+    opacity: 0.6;
+  }
+
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--white);
+    opacity: 0.6;
+  }
+
+  &:-ms-input-placeholder {
+    // Edge and EI
+    color: var(--white);
+    opacity: 0.6;
+  }
+
+  &::placeholder {
+    color: var(--white);
+    opacity: 0.6;
+  }
 }
 
 button {
