@@ -168,6 +168,15 @@ footer .column.newsletter {
       outline: none;
     }
 
+    &::placeholder,
+    &::-ms-input-placeholder,
+    &::-webkit-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder {
+      color: var(--white);
+      opacity: 0.5;
+    }
+
     @media screen and (min-width: 730px) and (max-width: 1040px) {
       margin-bottom: 5px;
     }
